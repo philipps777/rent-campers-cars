@@ -1,0 +1,11 @@
+.filters {
+    width: 360px;
+    margin-bottom: 55px;
+}
+
+.filtersTitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--dark-gray);
+}

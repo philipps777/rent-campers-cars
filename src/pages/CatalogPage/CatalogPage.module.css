@@ -1,0 +1,43 @@
+.container {
+    position: relative;
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 48px 64px 52px 64px;
+    box-sizing: border-box;
+}
+
+.filters {
+    margin-right: 64px;
+}
+
+.catalogPage {
+    display: flex;
+}
+
+.camperGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.loadMoreButton {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    color: var(--black);
+    padding: 16px 32px;
+    border-radius: 200px;
+    transition: all 0.3s ease;
+    min-width: fit-content;
+    max-width: fit-content;
+}
+
+.loadMoreButton:hover {
+    border: 1px solid var(--dark-red);
+}
