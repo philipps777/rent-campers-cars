@@ -25,24 +25,23 @@ The application features a user-friendly interface with the following functional
 git clone [https://github.com/your-repository/rent-campers-cars.git](https://github.com/your-repository/rent-campers-cars.git)
 
 
-
-2. **Navigate to the project directory:**
+2. Navigate to the project directory:
 
 Bash
 cd rent-campers-cars
 
-3. **Install dependencies:**
-
+3. Install dependencies:
 
 Bash
 npm install
 
-4. **IStart the development server:**
+
+4. Start the development server:
 
 Bash
 npm run dev
 
-4. **Build the project for production:**
+5. Build the project for production:
 
 Bash
 npm run build
