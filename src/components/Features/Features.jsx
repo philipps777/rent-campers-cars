@@ -12,7 +12,7 @@ const Features = ({ camper }) => {
     ];
     return (
         <div className={styles.featuresContainer}>
-            {/* <div className={styles.vehicleDetails}> */}
+          
                 
         
                 <div className={styles.vehicleDetails}>
@@ -28,7 +28,7 @@ const Features = ({ camper }) => {
                         ))}
                 </div>
                 </div>
-            {/* </div> */}
+           
         </div>
     );
 };
