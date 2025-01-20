@@ -2,6 +2,9 @@ import styles from './Reviews.module.css';
 import star from '../../assets/icons/star.svg'
 import emptyStar from '../../assets/icons/emptyStar.svg';
 
+// src={i < rating ? star : emptyStar}
+// alt={i < rating ? "Filled star" : "Empty star"}
+
 const Reviews = ({ reviews }) => {
     const renderStars = (rating) => {
         const maxRating = 5;

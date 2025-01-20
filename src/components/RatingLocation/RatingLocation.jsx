@@ -3,6 +3,7 @@ import mapIcon from '../../assets/icons/Map.svg';
 import styles from './RatingLocation.module.css';
 
 const RatingLocation = ({ rating, reviewCount, location }) => {
+
     const locationParts = location.split(', ').reverse().join(', ');
 
     return (

@@ -9,6 +9,26 @@ import Reviews from "../../components/Reviews/Reviews";
 import CamperBookingForm from "../../components/CamperBookingForm/CamperBookingForm";
 import styles from "./CamperDetailsPage.module.css";
 
+
+
+
+// useEffect(() => {
+//   dispatch(fetchCamperDetails(id));
+// }, [dispatch, id]);
+
+// if () {
+//   return <div>Loading...</div>;
+// }
+
+// if () {
+//   return <div>Error: {error}</div>;
+// }
+
+// if () {
+//   return <div>No camper found</div>;
+// }
+
+
 const CamperDetailsPage = () => {
   const { id } = useParams();
   const dispatch = useDispatch();

@@ -4,13 +4,13 @@ import CamperDetails from "../CamperDetails/CamperDetails";
 import styles from "./CamperCard.module.css";
 
 const CamperCard = ({ camper }) => {
-  const [isFavorites, setIsFavorites] = useState(false);
+  const [isFavorite, setIsFavorite] = useState(false);
 
   useEffect(() => {
     const savedFavorites =
       JSON.parse(localStorage.getItem("favoriteCampers")) || [];
     if (savedFavorites.includes(camper.id)) {
-      setIsFavorites(true);
+      setIsFavorite(true);
     }
   }, [camper.id]);
 
@@ -19,14 +19,14 @@ const CamperCard = ({ camper }) => {
       JSON.parse(localStorage.getItem("favoriteCampers")) || [];
     let updatedFavorites;
 
-    if (isFavorites) {
+    if (isFavorite) {
       updatedFavorites = savedFavorites.filter((favId) => favId !== camper.id);
     } else {
       updatedFavorites = [...savedFavorites, camper.id];
     }
 
     localStorage.setItem("favoriteCampers", JSON.stringify(updatedFavorites));
-    setIsFavorites(!isFavorites);
+    setIsFavorite(!isFavorite);
   };
 
   return (
@@ -34,7 +34,7 @@ const CamperCard = ({ camper }) => {
       <CamperImage imageUrl={camper.gallery[0].thumb} name={camper.name} />
       <CamperDetails
         camper={camper}
-        isFavorites={isFavorites}
+        isFavorite={isFavorite}
         onFavoriteToggle={handleFavoriteToggle}
       />
     </div>

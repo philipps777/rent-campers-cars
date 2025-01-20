@@ -5,7 +5,7 @@ import FeaturesList from "../FeaturesList/FeaturesList";
 import Button from "../Button/Button";
 import styles from "./CamperDetails.module.css";
 
-const CamperDetails = ({ camper, isAddToFavorites, onFavoriteToggle }) => {
+const CamperDetails = ({ camper, isFavorite, onFavoriteToggle }) => {
   const truncatedDescription =
     camper.description.length > 62
       ? camper.description.slice(0, 62) + "..."
@@ -16,7 +16,7 @@ const CamperDetails = ({ camper, isAddToFavorites, onFavoriteToggle }) => {
       <TitleSection
         name={camper.name}
         price={camper.price}
-        isAddToFavorites={isAddToFavorites}
+        isFavorite={isFavorite} 
         onFavoriteToggle={onFavoriteToggle}
       />
       <RatingLocation

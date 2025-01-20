@@ -39,3 +39,7 @@
     transform: scale(1.1);
 }
 
+ 
+.favoriteButtonSelected {
+    border-color: var(--red);
+} 
